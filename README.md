@@ -1,4 +1,4 @@
-# biblemod
+# bible
 a mod for minetest (see http://minetest.net) that adds a bible.
 IMHO it was missing in the church mod (https://github.com/mootpoint/church), that brings many helpful items to build a good church.
 
