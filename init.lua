@@ -2,10 +2,10 @@ minetest.register_node("bible:bible_open", {
 	tiles = {
 		"bible_front.png",
 		"bible_back.png",
-		"default_wood.png",
-		"default_wood.png",
-		"default_wood.png",
-		"default_wood.png"
+		"bible_side.png",
+		"bible_side.png",
+		"bible_side.png",
+		"bible_side.png"
 	},
 	groups = {snappy=1,choppy=2,oddly_breakable_by_hand=2,flammable=3},
 	drawtype = "nodebox",
@@ -20,12 +20,12 @@ minetest.register_node("bible:bible_open", {
 
 minetest.register_node("bible:bible_closed", {
 	tiles = {
+		"bibleclosed_front.png",
 		"bible_front.png",
-		"bible_back.png",
-		"default_wood.png",
-		"default_wood.png",
-		"default_wood.png",
-		"default_wood.png"
+		"bible_side.png",
+		"bible_spine.png",
+		"bible_side.png",
+		"bible_side.png"
 	},
 	groups = {snappy=1,choppy=2,oddly_breakable_by_hand=2,flammable=3},
 	drawtype = "nodebox",
@@ -33,7 +33,7 @@ minetest.register_node("bible:bible_closed", {
 	node_box = {
 		type = "fixed",
 		fixed = {
-			{-0.5, -0.5, -0.5, 0, -0.1, 0.5}, 
+			{0, -0.5, -0.5, 0.5, -0.1, 0.5}, 
 		}
 	}
 })
