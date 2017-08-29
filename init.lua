@@ -1,4 +1,5 @@
 minetest.register_node("bible:bible_open", {
+	description = "Open Bible",
 	tiles = {
 		"bible_front.png",
 		"bible_back.png",
@@ -19,6 +20,7 @@ minetest.register_node("bible:bible_open", {
 })
 
 minetest.register_node("bible:bible_closed", {
+	description = "Closed Bible",
 	tiles = {
 		"bibleclosed_front.png",
 		"bible_front.png",
