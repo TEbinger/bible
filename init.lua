@@ -27,7 +27,7 @@ minetest.register_node("bible:bible_open", {
 	drop = "bible:bible_closed",
 	on_construct = function(pos)
 		local meta = minetest.get_meta(pos)
-		meta:set_string('infotext', "King James Bible");
+		meta:set_string('infotext', "Bible");
 	end,
 	on_rightclick = function(pos, node, player)
 		minetest.sound_play("bible_page",{pos = pos, gain = 0.5, max_hear_distance = 3})
@@ -40,7 +40,7 @@ minetest.register_node("bible:bible_open", {
 })
 
 minetest.register_node("bible:bible_closed", {
-	description = "KJV Bible",
+	description = "Bible",
 	inventory_image = "bible_inv.png",
 	wield_image = "bible_inv.png",
 	tiles = {
@@ -67,7 +67,7 @@ minetest.register_node("bible:bible_closed", {
 	},
 	on_construct = function(pos)
 		local meta = minetest.get_meta(pos)
-		meta:set_string('infotext', "King James Bible");
+		meta:set_string('infotext', "Bible");
 	end,
 	on_punch= function(pos, node, player)
 		minetest.sound_play("bible_open",{pos = pos, gain = 0.5, max_hear_distance = 3})
