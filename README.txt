@@ -15,3 +15,5 @@ Napiophelios improved the mod and added functionality. See his original mod on h
 
 To install the mod, just download the .zip file, extract it, and copy everything to the "mods" folder of minetest on Your computer. Then open the game, go to "local game" ("Lokales Spiel"), choose a world, cklick "configure" ("Konfigurieren") and activate it.
 Have fun and don't forget to read the real bible :-) 
+
+I also added a lutheran pastor as character. You can rename it to character.png and replace the one from You textures. Or You add it manually to this mod as last entry https://github.com/dmonty2/minetest-u_skinsdb (You don't need to have the preview images).
