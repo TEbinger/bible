@@ -4,8 +4,8 @@ minetest.register_node("bible:bible_open", {
 	tiles = {
 	"bible_opened_top.png",
 	"bible_opened_bottom.png^[transformFY",
-	"bible_opened_bottom.png^[transformFY",
-	"bible_opened_bottom.png^[transformFY",
+	"bible_opened_bottom.png",
+	"bible_opened_bottom.png",
 	"bible_opened_bottom.png",
 	"bible_opened_bottom.png"
 	},
