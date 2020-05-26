@@ -31,7 +31,7 @@ minetest.register_node("bible:bible_open", {
 	end,
 	on_rightclick = function(pos, node, player)
 		minetest.sound_play("bible_page",{pos = pos, gain = 0.5, max_hear_distance = 3})
-		mt_biblebot.show_verse()
+		mt_biblebot.show_verse(player:get_player_name())
 	end,
 	on_punch = function(pos, node, player)
 		minetest.sound_play("bible_close",{pos = pos, gain = 0.5, max_hear_distance = 3})
