@@ -51,16 +51,7 @@ minetest.register_node("bible:bible_closed", {
 	"bible_closed_top.png^[transformFXR90",
 	"bible_closed_top.png^[transformR90"
 	},
-	
-	minetest.register_craft({
-    type = "shaped",
-    output = "bible:bible_closed 1",
-    recipe = {
-        {"", "default:book",                         ""},
-        {"default:book", "default:book",  "default:book"},
-        {"", "default:book",  ""}
-    }
-})	
+		
 	groups = {oddly_breakable_by_hand = 3, dig_immediate = 1, flammable = 3},
 	drawtype = "nodebox",
 	paramtype = "light",
@@ -84,4 +75,14 @@ minetest.register_node("bible:bible_closed", {
 		minetest.sound_play("bible_page",{pos = pos, gain = 0.5, max_hear_distance = 3})
 		minetest.swap_node(pos, {name="bible:bible_open", param2 = node.param2})
 	end,
+})
+
+minetest.register_craft({
+    type = "shaped",
+    output = "bible:bible_closed 1",
+    recipe = {
+        {"", "default:book",                         ""},
+        {"default:book", "default:book",  "default:book"},
+        {"", "default:book",  ""}
+    }
 })
